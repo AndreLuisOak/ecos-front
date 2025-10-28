@@ -259,7 +259,7 @@ import BarChart from "../components/Bar.vue";
   }
 
   function contarRelacionamentos(modeloData) {
-  return (xml.match(/<mxCell[^>]*edge="1"/g) || []).length;
+  return (modeloData.match(/<mxCell[^>]*edge="1"/g) || []).length;
 }
 
   function calcularAtividadeComunidade(nElementosAlterados, nElementosTotais) {
